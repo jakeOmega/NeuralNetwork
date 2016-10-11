@@ -1,2 +1,2 @@
 # NeuralNetwork
-A push-forward neural network class in C#
+A push-forward neural network class in C#. Contains the net class, which is a push-forward neural network with methods for training through backpropagation, as well as a form class which trains a network to distinguish images drawn from specified directories and plots the error of the network on a subset of testing images. The network is not trained on these testing images, and so they serve effectively to measure the networks effectiveness in sorting future images.
