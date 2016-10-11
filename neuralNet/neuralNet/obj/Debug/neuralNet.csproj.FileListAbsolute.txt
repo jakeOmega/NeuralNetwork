@@ -10,3 +10,15 @@ d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug
 d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug\neuralNet.pdb
 d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\bin\Debug\HDF5DotNet.dll
 d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug\neuralNet.mainForm.resources
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\bin\Debug\neuralNet.exe.config
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\obj\Debug\neuralNet.exe
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\obj\Debug\neuralNet.pdb
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\bin\Debug\neuralNet.exe
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\bin\Debug\neuralNet.pdb
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\bin\Debug\HDF5DotNet.dll
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\bin\Debug\MathNet.Numerics.dll
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\bin\Debug\MathNet.Numerics.xml
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\obj\Debug\neuralNet.csprojResolveAssemblyReference.cache
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\obj\Debug\neuralNet.mainForm.resources
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\obj\Debug\neuralNet.Properties.Resources.resources
+D:\Libraries\Documents\Github Projects\NeuralNetwork\neuralNet\neuralNet\obj\Debug\neuralNet.csproj.GenerateResource.Cache
