@@ -1,0 +1,12 @@
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\bin\Debug\neuralNet.exe.config
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\bin\Debug\neuralNet.exe
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\bin\Debug\neuralNet.pdb
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\bin\Debug\MathNet.Numerics.dll
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\bin\Debug\MathNet.Numerics.xml
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug\neuralNet.csprojResolveAssemblyReference.cache
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug\neuralNet.Properties.Resources.resources
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug\neuralNet.csproj.GenerateResource.Cache
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug\neuralNet.exe
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug\neuralNet.pdb
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\bin\Debug\HDF5DotNet.dll
+d:\libraries\documents\visual studio 2015\Projects\neuralNet\neuralNet\obj\Debug\neuralNet.mainForm.resources
