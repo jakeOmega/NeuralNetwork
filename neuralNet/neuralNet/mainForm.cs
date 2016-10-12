@@ -16,6 +16,11 @@ namespace neuralNet
         delegate void AddPointCallback(int index, double error, int series);
         int pictureWidth = 160;
         int pictureHeight = 90;
+        bool loadNet = true; //Should we load a neural net or create a new one
+        string saveLoc = "../../../../eu4ScreenshotDetector.net"; //Where to save the net to
+        string loadLoc = "../../../../eu4ScreenshotDetector.net"; //Where to load the net from
+        string goodDirectory = "D:\\Libraries\\Desktop\\images\\good";
+        string badDirectory = "D:\\Libraries\\Desktop\\images\\bad";
 
         ///<summary>
         ///Takes a file location for an image and translates it into a vector of 
@@ -81,7 +86,7 @@ namespace neuralNet
 
         ///<summary>
         ///For a given neural network with one output and a list of files that should be given
-        ///either an output of 1 (goodFiles) or 0 (badFiles), and 
+        ///either an output of 1 (goodFiles) or 0 (badFiles), and prints bad/uncertain ones
         ///</summary>
         private double trainingError(net netIn, List<string> goodFiles, List<string> badFiles)
         {
@@ -152,13 +157,13 @@ namespace neuralNet
             int testCountPerCat = 30;
             Random rnd = new Random();
             //Grab all the good (output = 1) and bad (output = 0) images and put them in a list in random order
-            List<string> goodFilesIn = System.IO.Directory.GetFiles("D:\\Libraries\\Desktop\\images\\good").ToList();
+            List<string> goodFilesIn = System.IO.Directory.GetFiles(goodDirectory).ToList();
             List<string> goodFiles = new List<string>(goodFilesIn.OrderBy(x => rnd.Next()).ToArray());
             //The last testCountPerCat images in the goodFiles list will be used as test images; not trained against
             int goodFileCount = goodFiles.Count() - testCountPerCat;
             List<string> goodFilesTrain = goodFiles.GetRange(0, goodFileCount);
             List<string> goodFilesTest = goodFiles.GetRange(goodFileCount, testCountPerCat);
-            List<string> badFilesIn = System.IO.Directory.GetFiles("D:\\Libraries\\Desktop\\images\\bad").ToList();
+            List<string> badFilesIn = System.IO.Directory.GetFiles(badDirectory).ToList();
             List<string> badFiles = new List<string>(badFilesIn.OrderBy(x => rnd.Next()).ToArray());
             //same idea as for good files
             int badFileCount = badFiles.Count() - testCountPerCat;
@@ -195,8 +200,15 @@ namespace neuralNet
             int[] intRange = Enumerable.Range(0, goodFileCount + badFileCount).ToArray();
 
             //Load in an old net or create a new one
-            net net = new net("D:\\Libraries\\Documents\\tempTest\\net4.net");
-            //net net = new net(4*pictureWidth*pictureHeight, 1, 2, 30);
+            net net;
+            if (loadNet)
+            {
+                net = new net(loadLoc);
+            }
+            else
+            {
+                net = new net(4 * pictureWidth * pictureHeight, 1, 2, 30);
+            }
 
             //We'll only save the net to file when it's error on the test images decreases
             double priorError = 1;
@@ -224,7 +236,7 @@ namespace neuralNet
                     if ( error < priorError )
                     {
                         priorError = error;
-                        net.serialize("D:\\Libraries\\Documents\\tempTest\\net4.net");
+                        net.serialize(saveLoc);
                     }
                     System.Diagnostics.Debug.WriteLine(error);
                 }
